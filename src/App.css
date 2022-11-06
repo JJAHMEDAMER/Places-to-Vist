@@ -12,18 +12,37 @@ body {
     font-family: "Karla";
 }
 
+.app{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.app--header {
+    grid-column: 1 / -1;
+    margin: 35px;
+    font-size: 40px;
+}
+
 
 .card {
     width: 450px;
     box-shadow: 0 5px 10px -3px rgb(131, 131, 131);
     margin-bottom: 15px;
     border-radius: 9px;
+    background-color: rgb(255, 255, 255);
 }
 
 .card--img {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    border-radius: 9px 9px 0 0;
+
 }
 
 .card--text {
@@ -38,7 +57,7 @@ body {
     justify-content: space-between;
 }
 
-.card--price{
+.card--price {
     color: rgb(23, 255, 178);
     background-color: rgb(232, 255, 247);
     padding: 4px 9px;

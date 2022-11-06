@@ -9,7 +9,12 @@ const Card = (props) => (
         <p className="card--price">$ {props.price}</p>
       </div>
       <p className="card--desc">{props.info}</p>
-      <button className="card--button">Not Interisted</button>
+      <button
+        className="card--button"
+        onClick={() => props.onClickHandler(props.id)}
+      >
+        Not Interested
+      </button>
     </div>
   </div>
 );
